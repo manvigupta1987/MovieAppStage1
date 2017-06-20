@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            tools:text="Movie Title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:id="@+id/movie_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorTeal"
+            android:gravity="center|left"
+            android:textStyle="normal"
+            android:paddingLeft="@dimen/padding_dimen"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/image_view"
+                android:adjustViewBounds="true"
+                android:paddingLeft="@dimen/padding_dimen"
+                android:paddingTop="@dimen/padding_dimen" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="32dp"
+                android:paddingTop="@dimen/padding_dimen">
+
+
+                <TextView
+                    tools:text="Release Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_releaseDate"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <TextView
+                    tools:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_rating"
+                    android:paddingTop="@dimen/padding_dimen"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            tools:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_plot"
+            android:paddingTop="@dimen/padding_dimen"
+            android:paddingLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+</ScrollView>
